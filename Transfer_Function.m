@@ -127,7 +127,7 @@ for jjj=1:length(f0_sp)
 end
 clear gr_acc_sp ifft_sysvel_acc_sp
 
-%save('transfer_function1.mat','green_acc_sp','green_acc_f','green_acc_p','h','k2','f0','f0_sp','G1','-v7.3')
+save('transfer_function1.mat','green_acc_sp','green_acc_f','green_acc_p','h','k2','f0','f0_sp','G1','-v7.3')
 clear green_acc_f  green_acc_p green_acc_sp
 
 %% set up matrices
@@ -220,7 +220,7 @@ for jjj=1:length(f0_sp)
     end
 end
 clear gr_vel_sp ifft_sysvel_vel_sp
-%save('transfer_function2.mat','green_vel_sp','green_vel_f','green_vel_p','-v7.3')
+save('transfer_function2.mat','green_vel_sp','green_vel_f','green_vel_p','-v7.3')
 clear green_vel_f  green_vel_p green_vel_sp
 
 %% set up matrices
@@ -313,4 +313,4 @@ for jjj=1:length(f0_sp)
     end
 end
 clear gr_dis_sp ifft_sysvel_dis_sp
-%save('transfer_function3.mat','green_dis_sp','green_dis_f','green_dis_p','-v7.3')
+save('transfer_function3.mat','green_dis_sp','green_dis_f','green_dis_p','-v7.3')
