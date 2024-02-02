@@ -55,7 +55,13 @@ for i_ind=1:length(index_list_2_deglitch) % began loop
             NDS=index_list_2_deglitch(i_ind+1)-index_list_2_deglitch(i_ind)-ND2;
         end
     end
-    
+    if i_ind==length(index_list_2_deglitch)
+        if lia12==1
+            NDS=1000;
+        elseif lia12==0
+            NDS=600;
+        end
+    end
     
     data2fit=cat(1,X(k).d);
     time2fit=cat(1,X(k).t); 
